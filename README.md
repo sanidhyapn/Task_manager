@@ -6,7 +6,7 @@ This project is a Task Management System built using the ***MERN stack (MongoDB,
 # 🌐 Live Demo # <br>
 🚀 The project is deployed on **Netlify**. You can access it here: <br>
 
-🔗 https://task-manager-backend-9hv8.onrender.com
+🔗 https://taskmanager-sanidhya.netlify.app/
 
 
 
