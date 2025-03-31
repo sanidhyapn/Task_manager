@@ -1,0 +1,77 @@
+/* Register Page Styles */
+
+/* Set the background color and make sure the content is centered */
+.register-page {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* Aligns the container to the top */
+  align-items: center;
+  padding-top: 0px; /* Adjust the top margin to bring it closer */
+  padding-bottom: 120px;
+}
+
+/* Styling for the container to center the content */
+.register-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Style */
+.register-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Form Group Style */
+.register-container .form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Input Fields */
+.register-container .form-control {
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #007bff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit Button */
+.register-container .btn-register {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* On Hover */
+.register-container .btn-register:hover {
+  background-color: #0056b3;
+  transition: 0.3s;
+}
+
+/* Link for redirecting to login page */
+.register-container .text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-container .text-center .link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.register-container .text-center .link:hover {
+  text-decoration: underline;
+}

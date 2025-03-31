@@ -1,0 +1,26 @@
+/* Login.css */
+
+/* login.css */
+
+/* Add a custom margin or padding to the login page container */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Optional: make sure the background is light */
+  padding-top: 0px; /* Adjust the top margin */
+  padding-bottom: 90px; /* Adjust the bottom margin */
+}
+
+body,
+html {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure full height */
+}
+
+/* Optional: You can also make sure the body does not overflow */
+body {
+  overflow: hidden; /* Prevent scrolling on the body */
+}
