@@ -11,7 +11,7 @@ export const TaskProvider = ({ children }) => {
   const fetchTasks = async () => {
     if (!user) return;
     try {
-      const res = await axios.get("http://localhost:5000/api/tasks", {
+      const res = await axios.get("https://task-manager-backend-9hv8.onrender.com/api/tasks", {
         headers: { Authorization: `Bearer ${user?.token}` },
       });
       console.log("Fetched tasks:", res.data);
@@ -24,7 +24,7 @@ export const TaskProvider = ({ children }) => {
   const addTask = async (task) => {
     if (!user) return;
     try {
-      const res = await axios.post("http://localhost:5000/api/tasks", task, {
+      const res = await axios.post("https://task-manager-backend-9hv8.onrender.com/api/tasks", task, {
         headers: { Authorization: `Bearer ${user?.token}` },
       });
       setTasks((prevTasks) => [...prevTasks, res.data]);
@@ -36,7 +36,7 @@ export const TaskProvider = ({ children }) => {
   const deleteTask = async (id) => {
     if (!user) return;
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/${id}`, {
+      await axios.delete(`https://task-manager-backend-9hv8.onrender.com/api/tasks/${id}`, {
         headers: { Authorization: `Bearer ${user?.token}` },
       });
       setTasks((prevTasks) => prevTasks.filter((task) => task._id !== id));
@@ -49,7 +49,7 @@ export const TaskProvider = ({ children }) => {
     if (!user) return;
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://task-manager-backend-9hv8.onrender.com/api/tasks/${id}`,
         { status },
         {
           headers: { Authorization: `Bearer ${user?.token}` },
@@ -70,7 +70,7 @@ export const TaskProvider = ({ children }) => {
     if (!user) return;
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/tasks/${id}`,
+        `https://task-manager-backend-9hv8.onrender.com/api/tasks/${id}`,
         updatedDetails,
         {
           headers: { Authorization: `Bearer ${user?.token}` },
